@@ -27,7 +27,7 @@ try {
     }
 
     $sql .= " ORDER BY p.created_at DESC LIMIT {$limit} OFFSET {$offset}";
-    
+
     $stmt = $pdo->prepare($sql);
     $stmt->execute($params);
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC);

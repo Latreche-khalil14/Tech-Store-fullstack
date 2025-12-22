@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store - الرئيسية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2 onclick="location.href='index.html'">🖥️ Tech Store</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">المنتجات</a></li>
+                <li id="user-nav"><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <div class="cart-icon" onclick="location.href='cart.html'">
+                🛒 <span class="cart-count">0</span>
+            </div>
+            <div id="logout-btn" style="display:none; cursor:pointer;" title="تسجيل الخروج">🚪</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>مرحباً بكم في Tech Store</h1>
+        <p>أفضل الحواسيب ومستلزماتها بأفضل الأسعار</p>
+        <button class="btn-add" onclick="location.href='products.html'" style="padding: 15px 40px; font-size: 1.1rem;">تصفح المنتجات</button>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">أحدث المنتجات</h2>
+        <div class="products-grid" id="featured-products">
+            <!-- سيتم تحميل المنتجات هنا عبر AJAX -->
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024 - Tech Store</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
